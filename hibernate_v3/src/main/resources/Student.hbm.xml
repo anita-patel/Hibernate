@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.learning.hibernate.entities.Students" table="Student_by_v3">
+		<id name="id" type="java.lang.Integer">
+			<column name="Student_RollNo" />
+			<generator class="identity"/>
+		</id>
+		<property name="Name" type="java.lang.String">
+			<column name="Stud_name" />
+		</property>
+		<property name="EmailId" type="java.lang.String">
+			<column name="EmailId" />
+		</property>
+		<property name="MobileNo" type="java.lang.String">
+			<column name="MobileNo" />
+		</property>
+		<property name="marks" type="java.lang.Integer">
+			<column name="Marks" />
+		</property>
+	</class>
+</hibernate-mapping>
